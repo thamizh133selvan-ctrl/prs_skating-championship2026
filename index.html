@@ -1006,7 +1006,7 @@
           console.log("Document written with ID: ", docRef.id);
 
           // ✅ Generate PDF link
-          const pdfLink = "https://prs-skating-championship2026.vercel.app/success.html?id=" + docRef.id + "&download=true";
+          const pdfLink = window.location.origin + "/success.html?id=" + docRef.id + "&download=true";
           // ✅ SEND EMAIL
           emailjs.send("service_n536a9t", "template_itz01db", {
             name: data.fullName,
