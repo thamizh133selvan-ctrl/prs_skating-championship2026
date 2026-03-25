@@ -421,7 +421,7 @@
         "9. Helmet is compulsory for the skater.",
         "10. Decision by the Officials will be the final.",
         "11. Officials nor the management will be responsible for any injuries.",
-        "12. Age Group has given in the norms of RSFI."
+        "12. Registration fee ₹300 Should be paid at the time of submitting the form."
       ];
       rules.forEach(r => { doc.text(r, margin, y); y += 5.5; });
 
@@ -482,14 +482,14 @@
 
             // Auto-trigger download if prompted via URL
             if (urlParams.get('download') === 'true') {
-              setTimeout(downloadPDF, 1500); 
+              setTimeout(downloadPDF, 1500);
             }
           }
         });
     } else {
       firebaseData = JSON.parse(localStorage.getItem('prs_registration') || '{}');
       renderData(firebaseData);
-      
+
       // Also for manual/direct access
       if (urlParams.get('download') === 'true') {
         setTimeout(downloadPDF, 1500);
