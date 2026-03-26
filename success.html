@@ -404,14 +404,14 @@
         [{ l: 'Rink IV', t: 'Toy Inline' }, { l: 'Rink V', t: 'Toy Inline' }]
       );
 
-      const ageVal = parseInt(data.age) || 0;
-      const quadLabel2 = ageVal <= 5 ? 'Rink II' : 'Road I';
-      const inlineLabel2 = ageVal <= 5 ? 'Rink V' : 'Road IV';
+      const quadLabel2 = 'Rink II';
+      const inlineLabel2 = 'Rink V';
 
       renderEventRow('QUAD', 'IN-LINE',
         [{ l: 'Rink I', t: 'Quad' }, { l: quadLabel2, t: 'Quad' }],
         [{ l: 'Rink IV', t: 'In-Line' }, { l: inlineLabel2, t: 'In-Line' }]
-      ); y += 8;
+      );
+ y += 8;
 
       // 6. RULES & DECLARATION
       doc.setFont('helvetica', 'bold');

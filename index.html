@@ -785,7 +785,7 @@
           <div class="sk-head">QUAD</div>
           <div class="sk-opts">
             <div id="opt-rink-quad" class="sk-opt" onclick="selEvent(this, 'Quad', 'Rink I')">Rink I</div>
-            <div id="opt-road-quad" class="sk-opt" onclick="selEvent(this, 'Quad', 'Road I')">Road I</div>
+            <div id="opt-road-quad" class="sk-opt" onclick="selEvent(this, 'Quad', 'Rink II')">Rink II</div>
           </div>
         </div>
         <!-- IN-LINE -->
@@ -793,7 +793,7 @@
           <div class="sk-head">IN-LINE</div>
           <div class="sk-opts">
             <div id="opt-rink-inline" class="sk-opt" onclick="selEvent(this, 'In-Line', 'Rink IV')">Rink IV</div>
-            <div id="opt-road-inline" class="sk-opt" onclick="selEvent(this, 'In-Line', 'Road IV')">Road IV</div>
+            <div id="opt-road-inline" class="sk-opt" onclick="selEvent(this, 'In-Line', 'Rink V')">Rink V</div>
           </div>
         </div>
       </div>
@@ -915,11 +915,11 @@
         ri.textContent = 'Rink V';
         ri.setAttribute('onclick', "selEvent(this, 'In-Line', 'Rink V')");
       } else {
-        // Normal options for age 6+
-        rq.textContent = 'Road I';
-        rq.setAttribute('onclick', "selEvent(this, 'Quad', 'Road I')");
-        ri.textContent = 'Road IV';
-        ri.setAttribute('onclick', "selEvent(this, 'In-Line', 'Road IV')");
+        // Normal options for age 6+ (Now updated to match below 6)
+        rq.textContent = 'Rink II';
+        rq.setAttribute('onclick', "selEvent(this, 'Quad', 'Rink II')");
+        ri.textContent = 'Rink V';
+        ri.setAttribute('onclick', "selEvent(this, 'In-Line', 'Rink V')");
       }
 
       // If categories changed, we should probably clear selection to be safe
