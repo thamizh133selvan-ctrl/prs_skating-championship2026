@@ -411,7 +411,7 @@
         [{ l: 'Rink I', t: 'Quad' }, { l: quadLabel2, t: 'Quad' }],
         [{ l: 'Rink IV', t: 'In-Line' }, { l: inlineLabel2, t: 'In-Line' }]
       );
- y += 8;
+      y += 8;
 
       // 6. RULES & DECLARATION
       doc.setFont('helvetica', 'bold');
@@ -420,8 +420,7 @@
         "8. No spot entry allowed.",
         "9. Helmet is compulsory for the skater.",
         "10. Decision by the Officials will be the final.",
-        "11. Officials nor the management will be responsible for any injuries.",
-        "12. Registration fee Rs.300 Should be paid at the time of submitting the form."
+        "11. Officials nor the management will be responsible for any injuries."
       ];
       rules.forEach(r => { doc.text(r, margin, y); y += 5.5; });
 
