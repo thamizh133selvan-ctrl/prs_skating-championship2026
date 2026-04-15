@@ -710,7 +710,7 @@
 
   <!-- FORM -->
   <div class="container">
-    <form id="regForm" novalidate>
+    <form id="regForm" novalidate onsubmit="return false;">
 
       <div class="sec">Personal Details</div>
       <div class="grid2">
@@ -807,7 +807,7 @@
       </div>
 
 
-      <button type="button" class="submit-btn" id="submitBtn" onclick="submitForm()">SUBMIT REGISTRATION</button>
+      <button type="button" class="submit-btn" id="submitBtn" disabled>Registrations Closed</button>
       <p class="form-note">After submission, your official registration form (PDF) will be available to download.</p>
 
     </form>
